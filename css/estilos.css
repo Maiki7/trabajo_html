@@ -1,46 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
-    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5d708f;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: 95%;
+}
+
+.logo_header {
+    width: 100px;
+    height: 100px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+header div h1 {
+    margin-left: 10px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_links a:hover {
+    color: white;
+}
+
+body {
+    padding-top: 100px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 footer {
-    background-color: #333;
-}
-
-nav {
-    overflow: hidden;
     display: flex;
-}
-
-/* Estilo de los enlaces dentro de la barra */
-
-.nav_titulo {
-    width: 70%;
-}
-
-.nav_opciones {
-    width: 30%;
-}
-
-nav h1 {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding-left: 15px;
-}
-
-nav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 15px;
-}
-
-/* Cambiar el color de los enlaces al pasar el cursor sobre ellos */
-nav a:hover {
-    background-color: #ddd;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5d708f;
     color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.conocenos {
+    width: 70%;
+    margin: 50px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.conocenos_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.conocenos_content p span {
+    font-weight: bold;
+}
+
+.conocenos_palas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.conocenos_palas img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.conocenos_pistas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.conocenos_pistas img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.conocenos_texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px 5px rgba(43, 42, 42, 0.2);
+    background-color: rgba(127, 146, 177, 0.87);
+    margin-left: -50px;
+    transition: transform 0.3s ease;
+    z-index: 15;
+}
+
+.conocenos_texto:hover {
+    transform: translateX(-5px);
+}
+
+
+.top_ventas {
+    width: 70%;
+    margin: 50px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.top_ventas_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.top_venta {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 5px rgba(73, 72, 72, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.top_venta:hover {
+    transform: translateY(-5px);
 }
