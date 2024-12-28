@@ -157,3 +157,22 @@ footer a:hover {
 .top_venta:hover {
     transform: translateY(-5px);
 }
+
+.contacta_empresa {
+    width: 70%;
+    margin: 50px auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.formulario_empresa {
+    margin-top: 30px;
+    text-align: left;
+    background-color: rgba(127, 146, 177, 0.87);
+    margin-left: 400px;
+    margin-right: 400px;
+    justify-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
