@@ -1,0 +1,80 @@
+.tabla_productos {
+    width: 70%;
+    margin: 50px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.tabla_productos h3 {
+    margin-top: 30px;
+}
+
+.tabla_productos_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    gap: 20px;
+    place-items: center;
+}
+
+.producto {
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    height: 150px;
+    width: 150px;
+}
+
+.producto p {
+    transition: transform 0.3s ease;
+    margin-top: -40px;
+    opacity: 0;
+}
+
+.producto:hover p {
+    transform: translateY(40px);
+    opacity: 1;
+}
+
+.pistas {
+    width: 70%;
+    margin: 50px auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.pistas img {
+    height: 337.50px;
+    width: 600px;
+    border-radius: 5%;
+}
+
+.pistas p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 10px 5px rgba(43, 42, 42, 0.2);
+    background-color: rgba(127, 146, 177, 0.87);
+    margin-left: -50px;
+    z-index: 15;
+    transition: transform 0.3s ease;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.pistas:hover p {
+    transform: translateX(-5px);
+}
