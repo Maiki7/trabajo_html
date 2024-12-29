@@ -61,6 +61,11 @@ footer {
     color: black;
     text-decoration: none;
     padding: 10px 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    opacity: 95%;
 }
 
 footer a {
@@ -73,7 +78,7 @@ footer a:hover {
 }
 
 .conocenos {
-    width: 70%;
+    width: 85%;
     margin: 50px auto;
     justify-content: center;
     text-align: center;
@@ -97,8 +102,8 @@ footer a:hover {
 }
 
 .conocenos_palas img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     z-index: 10;
 }
@@ -109,8 +114,8 @@ footer a:hover {
 }
 
 .conocenos_pistas img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     z-index: 10;
 }
@@ -120,8 +125,6 @@ footer a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
     box-shadow: 0 0 10px 5px rgba(43, 42, 42, 0.2);
     background-color: rgba(127, 146, 177, 0.87);
     margin-left: -50px;
@@ -135,7 +138,7 @@ footer a:hover {
 
 
 .top_ventas {
-    width: 70%;
+    width: 85%;
     margin: 50px auto;
     justify-content: center;
     text-align: center;
@@ -160,7 +163,9 @@ footer a:hover {
 }
 
 .contacta_empresa {
-    width: 70%;
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
     margin: 50px auto;
     justify-content: center;
     text-align: center;
@@ -174,6 +179,5 @@ footer a:hover {
     margin-left: 400px;
     margin-right: 400px;
     justify-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 20px;
 }

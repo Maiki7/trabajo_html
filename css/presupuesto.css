@@ -1,0 +1,9 @@
+.presupuesto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 85%;
+    margin: 50px auto;
+}

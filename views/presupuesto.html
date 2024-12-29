@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presupuesto</title>
+    <title>Solo Pádel</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/presupuesto.css">
+    <link rel="shortcut icon" href="../images/logo.png"> 
 </head>
+
 <body>
-    
+    <!--HEADER-->
+    <header>
+        <div>
+            <a href="../index.html">
+                <img alt="Logo" src="../images/logo.png" class="logo_header">
+            </a>
+            <h1>SOLO PÁDEL</h1>
+        </div>
+        <div>
+            <nav class="nav_links">
+                <a href="../views/productos.html">Productos</a>
+                <a href="../views/presupuesto.html">Presupuesto</a>
+                <a href="../views/contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--CONTENIDO PRINCIPAL-->
+    <main>
+        <!--FORMULARIO PRESUPUESTO-->
+        <section class="presupuesto">
+            <h2>Si quieres un presupuesto personalizado por favor contacta con nosotros a 
+                través de este formulario</h2>
+            <div class="formulario_empresa">
+                <form name="formulario_presupuesto" id="formulario_presupuesto">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <label for="email">Correo Electrónico:</label><br>
+                    <input type="email" id="email_presupuesto" name="email_presupuesto" required><br><br>
+                    <label for="telefono">Teléfono:</label><br>
+                    <input type="tel" id="telefono" name="telefono" required><br><br>
+                    <label for="mensaje_presupuesto">Solicite más información:</label><br>
+                    <textarea id="mensaje_presupuesto" name="mensaje_presupuesto" rows="4" cols="50" required></textarea><br><br>
+                    <input type="checkbox" id="acept_politica" name="acept_politica" required>
+                    <label for="acept_politica">He leído y acepto la política de privacidad de la empresa.</label><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <p>&copy; 2024 Todos los derechos reservados</p>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+    </footer>
 </body>
+
 </html>
