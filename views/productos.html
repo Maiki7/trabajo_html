@@ -13,19 +13,26 @@
 <body>
     <!--HEADER-->
     <header>
-        <div>
-            <a href="../index.html">
-                <img alt="Logo" src="../images/logo.png" class="logo_header">
-            </a>
-            <h1>SOLO PÁDEL</h1>
-        </div>
-        <div>
-            <nav class="nav_links">
-                <a href="../views/productos.html">Productos</a>
-                <a href="../views/presupuesto.html">Presupuesto</a>
-                <a href="../views/contacto.html">Contacto</a>
-            </nav>
-        </div>
+        <nav class="nav_bar">
+            <div>
+                <a href="../index.html">
+                    <img alt="Logo" src="../images/logo.png" class="logo_header">
+                </a>
+                <h1>SOLO PÁDEL</h1>
+            </div>
+    
+            <input type="checkbox" id="check_menu" class="check_menu">
+    
+            <ul class="nav_links">
+                <li><a href="../views/productos.html">Productos</a></li>
+                <li><a href="../views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="../views/contacto.html">Contacto</a></li>
+            </ul>
+    
+            <label for="check_menu" class="label_check">
+                <img alt="menu" src="../images/menu.svg" class="menu_hamburguesa">
+            </label>
+        </nav>
     </header>
 
     <!--CONTENIDO PRINCIPAL-->

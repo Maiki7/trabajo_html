@@ -5,7 +5,6 @@
 }
 
 header {
-    display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #5d708f;
@@ -15,6 +14,15 @@ header {
     width: 100%;
     z-index: 1000;
     opacity: 95%;
+    justify-content: space-between;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 125px;
 }
 
 .logo_header {
@@ -22,28 +30,40 @@ header {
     height: 100px;
 }
 
-header div {
+.nav_bar {
+    position: relative;
     display: flex;
     align-items: center;
-    padding: 10px 10px;
-}
-
-header div h1 {
-    margin-left: 10px;
+    padding: 10px 20px;
+    justify-content: space-between;
 }
 
 .nav_links {
     display: flex;
     gap: 30px;
+    list-style: none;
+    margin-right: 25px;
 }
 
-.nav_links a {
+.nav_links li a {
     text-decoration: none;
     color: black;
 }
 
-.nav_links a:hover {
+.nav_links li a:hover {
     color: white;
+}
+
+.check_menu {
+    display: none;
+}
+
+.label_check {
+    display: none;
+}
+
+.label_check img {
+    cursor: pointer;
 }
 
 body {
@@ -180,4 +200,39 @@ footer a:hover {
     margin-right: 400px;
     justify-items: center;
     padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .label_check {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    .nav_links {
+        display: none;
+        flex-direction: column;
+        gap: 0px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: #5d708fcb;
+        margin: 0;
+    }
+
+    .nav_links li a {
+        display: flex;
+        justify-content: center;
+        height: 30px;
+        align-items: center;
+    }
+
+    .nav_links li a:hover {
+        background-color: #5d708f;
+    }
+
+    .check_menu:checked + .nav_links {
+        display: flex;
+    }
 }
