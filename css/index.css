@@ -43,6 +43,7 @@ header div {
     gap: 30px;
     list-style: none;
     margin-right: 25px;
+    font-size: 20px;
 }
 
 .nav_links li a {
@@ -52,6 +53,20 @@ header div {
 
 .nav_links li a:hover {
     color: white;
+}
+
+.nav_links li a:active {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.active {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(137, 177, 104);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .check_menu {
