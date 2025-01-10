@@ -16,7 +16,7 @@
         <nav class="nav_bar">
             <div>
                 <a href="../index.html">
-                    <img alt="Logo" src="../images/logo.png" class="logo_header" width="190px" height="184px">
+                    <img alt="Logo" src="../images/logo.png" class="logo_header" width="190" height="184">
                 </a>
                 <h1>SOLO PÁDEL</h1>
             </div>
@@ -45,11 +45,16 @@
             <div class="formulario_empresa">
                 <form name="formulario_presupuesto" id="formulario_presupuesto">
                     <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre" required><br><br>
-                    <label for="email">Correo Electrónico:</label><br>
+                    <input type="text" id="nombre" name="nombre" 
+                    required pattern="[A-Za-záéíóúÁÉÍÓÚñÑ ]+" 
+                    title="El nombre solo puede contener letras y espacios."><br><br>
+                    <label for="email_presupuesto">Correo Electrónico:</label><br>
                     <input type="email" id="email_presupuesto" name="email_presupuesto" required><br><br>
                     <label for="telefono">Teléfono:</label><br>
-                    <input type="tel" id="telefono" name="telefono" required><br><br>
+                    <input type="tel" id="telefono" name="telefono" required 
+                    pattern="^[0-9]{9}$" 
+                    title="El número de teléfono debe tener exactamente 9 dígitos sin espacios ni caracteres especiales.">
+                    <br><br>
                     <label for="mensaje_presupuesto">Solicite más información:</label><br>
                     <textarea id="mensaje_presupuesto" name="mensaje_presupuesto" rows="4" cols="50" required></textarea><br><br>
                     <input type="checkbox" id="acept_politica" name="acept_politica" required>
